@@ -16,3 +16,6 @@ export default class ControleEditora {
     return editora ? editora.nome : undefined;
   }
 }
+
+// Instância exportável do controle de editora
+export const controleEditora = new ControleEditora();
