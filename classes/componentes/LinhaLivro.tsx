@@ -2,15 +2,13 @@ import React from 'react';
 import { Livro } from '../modelo/Livro';
 import { controleEditora } from '../controle/ControleEditora';
 
-// b) Interface LinhaLivroProps
 interface LinhaLivroProps {
   livro: Livro;
   excluir: () => void;
 }
 
-// c) Componente exportável LinhaLivro
 export const LinhaLivro: React.FC<LinhaLivroProps> = (props) => {
-  // d) Copiar o corpo da função LinhaLivro do projeto livros-react
+
   const { livro, excluir } = props;
 
   const nomeEditora = controleEditora.getNomeEditora(livro.codEditora);

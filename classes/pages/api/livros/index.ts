@@ -1,6 +1,5 @@
-// pages/api/livros/index.ts
 import { NextApiRequest, NextApiResponse } from 'next';
-import { controleLivro } from '@/controle/';
+import { controleLivro } from '@/controle/ControleLivros';
 
 export default (req: NextApiRequest, res: NextApiResponse) => {
   try {
@@ -12,10 +11,10 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
       controleLivro.incluir(novoLivro);
       res.status(200).json({ mensagem: 'Livro adicionado com sucesso!' });
     } else {
-      res.status(405).end(); // Método não permitido
+      res.status(405).end(); 
     }
   } catch (error) {
     console.error(error);
-    res.status(500).end(); // Exceção ocorrida no servidor
+    res.status(500).end(); 
   }
 };

@@ -1,8 +1,7 @@
 // pages/index.tsx
 
 import Head from 'next/head';
-import { Menu } from '../classes/componentes/Menu' // Ajuste o caminho conforme a estrutura do seu projeto
-
+import { Menu } from '../classes/componentes/Menu' 
 const Home: React.FC = () => {
     return (
       <div className="container">

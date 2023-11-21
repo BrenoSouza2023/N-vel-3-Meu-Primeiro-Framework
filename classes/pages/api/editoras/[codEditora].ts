@@ -1,4 +1,3 @@
-// pages/api/editoras/[codEditora].ts
 import { NextApiRequest, NextApiResponse } from 'next';
 import { controleEditora } from '@/controle/ControleEditora';
 
@@ -16,7 +15,7 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
       const nomeEditora = controleEditora.getNomeEditora(codigoEditora);
       res.status(200).json({ nome: nomeEditora });
     } else {
-      res.status(405).end(); // Método não permitido
+      res.status(405).end(); 
     }
   } catch (error) {
     console.error(error);

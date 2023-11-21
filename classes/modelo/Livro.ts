@@ -1,17 +1,15 @@
-// Livro.ts
-
 export class Livro {
     codigo: number;
     codEditora: number;
     titulo: string;
-    resumo: string; // Adicionando a propriedade resumo
+    resumo: string; 
     autores: string[];
   
     constructor(codigo: number, codEditora: number, titulo: string, resumo: string, autores: string[]) {
       this.codigo = codigo;
       this.codEditora = codEditora;
       this.titulo = titulo;
-      this.resumo = resumo; // Inicializando a propriedade resumo no construtor
+      this.resumo = resumo; 
       this.autores = autores;
     }
   }

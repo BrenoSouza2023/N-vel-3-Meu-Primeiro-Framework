@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
-import { Menu } from '../componentes/Menu'; // Ajuste o caminho conforme a estrutura do seu projeto
-import { LinhaLivro } from '../componentes/LinhaLivro'; // Importe o componente LinhaLivro
+import { Menu } from '../componentes/Menu'; 
+import { LinhaLivro } from '../componentes/LinhaLivro'; 
 import styles from '../styles/Home.module.css';
 import { Livro } from '../modelo/Livro';
 
